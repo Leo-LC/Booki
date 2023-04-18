@@ -447,8 +447,6 @@ footer {
         font-size: 13px;
     }
 
-    /* TODO responsive très petits écrans*/
-    /* TODO image hevergements suyr les petites tailles */
     .activites-image img {
         height: 200px;
     }
@@ -461,11 +459,6 @@ footer {
         padding: 0;
     }
 
-    .search-section {
-        gap: 1rem;
-        margin-bottom: 0;
-        padding-inline: 1rem;
-    }
 
     .sm-only {
         display: flex;
@@ -499,6 +492,21 @@ footer {
         border-bottom: 2px solid var(--main-color);
     }
 
+    .search-section {
+        gap: 1rem;
+        margin-bottom: 0;
+        padding-inline: 1rem;
+    }
+
+    .search-section-searchbar {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .search-input {
+        width: inherit;
+    }
+
     .search-button {
         border-radius: 1rem;
     }
@@ -509,17 +517,19 @@ footer {
 
     .filtres {
         flex-wrap: wrap;
+        gap: .75rem;
     }
 
     .filtres>* {
-        flex-basis: 45%;
+        flex-basis: 40%;
         flex-grow: 1;
         flex-shrink: 1;
+        font-size: 14px;
     }
 
     .selection {
         justify-content: flex-start;
-        gap: 1rem;
+        gap: .5rem;
         padding-block: 1rem;
     }
 
@@ -578,9 +588,3 @@ footer {
         padding-inline-start: 2rem;
     }
 }
-
-/* TODO : 1024 : cards hauteurs cheloux */
-
-/****** ADJUSTMENTS ********/
-
-@media screen and (width < 380px) {}
